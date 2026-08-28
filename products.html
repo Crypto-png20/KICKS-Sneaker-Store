@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KICKS | Sneakers</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">🔥 Free Delivery on all orders over ₹4999 &nbsp; | &nbsp; Easy Returns</div>
+<nav class="navbar">
+  <a class="logo" href="index.html">KICKS</a>
+  <div class="navlinks"><a href="index.html">HOME</a><a class="active" href="products.html">SNEAKERS</a><a href="products.html">NEW ARRIVALS</a><a href="index.html#about">ABOUT</a></div>
+  <div class="navicons"><span>⌕</span><a href="cart.html">🛒 <b class="cart-count">0</b></a><span>♙</span></div>
+</nav>
+
+<main class="page">
+  <div class="page-title"><div class="red-label">KICKS COLLECTION</div><h1>ALL SNEAKERS</h1><p>Find your next favourite pair.</p></div>
+  <div class="filter-row"><button class="filter active-filter">ALL</button><button class="filter">RUNNING</button><button class="filter">CASUAL</button><button class="filter">HIGH TOP</button></div>
+  <div class="product-grid">
+<article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" alt="Nike Air Force 1 '07"></div>
+<div class="product-info"><small>NIKE</small><h3>Nike Air Force 1 '07</h3><div class="price-row"><strong>₹8,999</strong><span>★ 4.8</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-0"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Nike Air Force 1 '07',8999,'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85','size-0')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=85" alt="Adidas Forum Low"></div>
+<div class="product-info"><small>ADIDAS</small><h3>Adidas Forum Low</h3><div class="price-row"><strong>₹7,499</strong><span>★ 4.6</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-1"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Adidas Forum Low',7499,'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=85','size-1')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=85" alt="Air Jordan 1 Mid"></div>
+<div class="product-info"><small>JORDAN</small><h3>Air Jordan 1 Mid</h3><div class="price-row"><strong>₹12,999</strong><span>★ 4.9</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-2"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Air Jordan 1 Mid',12999,'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=85','size-2')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=85" alt="Puma RS-X Reinvent"></div>
+<div class="product-info"><small>PUMA</small><h3>Puma RS-X Reinvent</h3><div class="price-row"><strong>₹6,999</strong><span>★ 4.7</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-3"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Puma RS-X Reinvent',6999,'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=85','size-3')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=700&q=85" alt="Nike Dunk Low"></div>
+<div class="product-info"><small>NIKE</small><h3>Nike Dunk Low</h3><div class="price-row"><strong>₹9,999</strong><span>★ 4.8</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-4"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Nike Dunk Low',9999,'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=700&q=85','size-4')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=700&q=85" alt="New Balance 550"></div>
+<div class="product-info"><small>NEW BALANCE</small><h3>New Balance 550</h3><div class="price-row"><strong>₹10,999</strong><span>★ 4.7</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-5"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('New Balance 550',10999,'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=700&q=85','size-5')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=85" alt="Vans Old Skool"></div>
+<div class="product-info"><small>VANS</small><h3>Vans Old Skool</h3><div class="price-row"><strong>₹5,499</strong><span>★ 4.6</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-6"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Vans Old Skool',5499,'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=85','size-6')">ADD TO CART</button>
+</article><article class="product-card">
+<div class="product-img"><img src="https://images.unsplash.com/photo-1494496195158-c3becb4c2868?auto=format&fit=crop&w=700&q=85" alt="Converse Chuck 70"></div>
+<div class="product-info"><small>CONVERSE</small><h3>Converse Chuck 70</h3><div class="price-row"><strong>₹6,499</strong><span>★ 4.7</span></div></div>
+<div class="size-row"><label>Size</label><select id="size-7"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<button class="add-btn" onclick="addSelected('Converse Chuck 70',6499,'https://images.unsplash.com/photo-1494496195158-c3becb4c2868?auto=format&fit=crop&w=700&q=85','size-7')">ADD TO CART</button>
+</article>
+  </div>
+</main>
+<footer><h2>KICKS</h2><p>Premium sneakers. Premium style.</p><p>© 2026 KICKS. All Rights Reserved.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

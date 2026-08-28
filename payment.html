@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KICKS | Checkout</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">🔒 Secure Demo Checkout &nbsp; | &nbsp; Easy Returns</div>
+<nav class="navbar">
+  <a class="logo" href="index.html">KICKS</a>
+  <div class="navlinks"><a href="index.html">HOME</a><a href="products.html">SNEAKERS</a><a href="products.html">NEW ARRIVALS</a><a href="cart.html">CART</a></div>
+  <div class="navicons"><a href="cart.html">🛒 <b class="cart-count">0</b></a></div>
+</nav>
+
+<main class="page">
+  <div class="page-title"><div class="red-label">CHECKOUT</div><h1>PAYMENT</h1><p>Enter your details to place your demo order.</p></div>
+  <div class="checkout-layout">
+    <form class="payment-form" id="paymentForm" novalidate>
+      <h2>Delivery & Payment Details</h2>
+      <div class="form-grid">
+        <div class="field full"><label>Full Name</label><input id="name" type="text" placeholder="Enter your full name"><small class="error" id="nameError"></small></div>
+        <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com"><small class="error" id="emailError"></small></div>
+        <div class="field"><label>Phone Number</label><input id="phone" type="tel" maxlength="10" placeholder="10 digit number"><small class="error" id="phoneError"></small></div>
+        <div class="field full"><label>Address</label><input id="address" type="text" placeholder="House no., street, area"><small class="error" id="addressError"></small></div>
+        <div class="field"><label>City</label><input id="city" type="text" placeholder="City"><small class="error" id="cityError"></small></div>
+        <div class="field"><label>PIN Code</label><input id="pin" type="text" maxlength="6" placeholder="6 digit PIN"><small class="error" id="pinError"></small></div>
+        <div class="field full"><label>Demo Card Number</label><input id="card" type="text" maxlength="19" placeholder="Use any 16-digit test number"><small class="error" id="cardError"></small></div>
+        <div class="field"><label>Expiry (MM/YY)</label><input id="expiry" type="text" maxlength="5" placeholder="MM/YY"><small class="error" id="expiryError"></small></div>
+        <div class="field"><label>CVV</label><input id="cvv" type="password" maxlength="3" placeholder="3 digits"><small class="error" id="cvvError"></small></div>
+      </div>
+      <p class="demo-note">This is a college project demo. Do not enter real card details.</p>
+      <button class="btn red-btn pay-btn" type="submit">PLACE DEMO ORDER →</button>
+    </form>
+
+    <aside class="order-summary">
+      <h2>Order Summary</h2>
+      <div id="paymentItems"></div>
+      <div class="summary-total"><span>Total</span><strong id="paymentTotal">₹0</strong></div>
+    </aside>
+  </div>
+</main>
+<footer><h2>KICKS</h2><p>Premium sneakers. Premium style.</p><p>© 2026 KICKS. All Rights Reserved.</p></footer>
+<script src="js/script.js"></script>
+<script>renderPaymentSummary(); setupPaymentForm();</script>
+</body>
+</html>
